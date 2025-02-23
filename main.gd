@@ -8,6 +8,7 @@ var connections = []  # Store connections between nodes
 var dragging_node = null  # Track currently dragged node
 var context_menu = null
 var pending_connection = null  # Stores the node currently trying to connect
+var node_id_counter = 0  # Unique ID counter for nodes
 
 func _ready():
 	print("ML IDE initialized")
@@ -20,6 +21,9 @@ func create_node(node_type: String, position: Vector2):
 	node.text = node_type
 	node.set_position(position)
 	node.set_size(Vector2(100, 50))
+	# Assign a unique ID to the node
+	node.set_meta("id", node_id_counter)
+	node_id_counter += 1
 	node.connect("gui_input", Callable(self, "_on_node_gui_input").bind(node))
 
 	# Create left and right connection circles with corrected positions
@@ -40,7 +44,7 @@ func create_connection_circle(parent_node, offset: Vector2, position_type: Strin
 
 	# Ensure interaction
 	circle.connect("gui_input", Callable(self, "_on_circle_clicked").bind(parent_node, position_type))
-
+	
 	parent_node.add_child(circle)
 	return circle
 
@@ -55,7 +59,7 @@ func _on_circle_clicked(event, parent_node, position_type):
 
 func connect_nodes(from_node: Node, to_node: Node):
 	connections.append({"from": from_node, "to": to_node})
-	print("Connected ", from_node.name, " to ", to_node.name)
+	print("Connected ", from_node.get_meta("id"), " to ", to_node.get_meta("id"))
 	queue_redraw()  # Redraw connections
 
 func _draw():
@@ -153,7 +157,6 @@ func _on_load_file_selected(file_path: String):
 	for node_data in data["nodes"]:
 		var new_node = create_node(node_data["name"], node_data["position"])
 		new_node.set_meta("id", node_data["id"])
-		nodes.append(new_node)
 		node_map[node_data["id"]] = new_node  # Store nodes by ID
 
 	# Then, restore connections using the dictionary
@@ -162,6 +165,7 @@ func _on_load_file_selected(file_path: String):
 			connect_nodes(node_map[conn_data["from"]], node_map[conn_data["to"]])
 
 	print("Project loaded from ", file_path)
+
 func create_menus():
 	var menu_bar = MenuButton.new()
 	menu_bar.text = "File"
