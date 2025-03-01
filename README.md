@@ -1,40 +1,69 @@
 # ML_Simulator
-Machine Learning IDE
 
-## Overview
-ML_Simulator is a fully customizable Machine Learning IDE built using Godot 4.3. It enables users to design, train, and test machine learning models with an intuitive drag-and-drop interface. Inspired by frameworks like PyTorch, this IDE is designed to be both flexible and powerful.
+## Machine Learning IDE
 
-## Features
-- **Drag-and-Drop Model Creation**: Build ML models by visually connecting nodes.
-- **Customizable Components**: Supports batch normalization, dropout, activation functions, and more.
-- **Full Python-like Functionality**: Uses [NumpyForGDScript](https://github.com/DisDoh/NumpyForGDScript) for numerical computing.
-- **Training and Evaluation**: Train models directly within the IDE and analyze performance.
-- **Godot Integration**: Leverage Godot's capabilities to enhance simulations and visualizations.
+### Overview
 
-## Installation
-### Prerequisites
-- Install [Godot 4.3](https://godotengine.org/download)
-- Clone the repository:
-  ```bash
-  git clone https://github.com/DisDoh/ML_Simulator.git
-  cd ML_Simulator
-  ```
-- Install dependencies if required (refer to documentation inside the repo).
+ML_Simulator is a fully customizable Machine Learning IDE that lets you design, train, and test machine learning models using an intuitive drag-and-drop interface. Drawing inspiration from frameworks like PyTorch, this IDE offers a flexible and powerful environment for prototyping and experimentation.
 
-## Usage
-1. Open Godot 4.3 and load the ML_Simulator project.
-2. Drag and drop components to build your ML model.
-3. Configure model parameters in the editor.
-4. Train the model and evaluate results using built-in tools.
+### Features
 
-## Roadmap
-- Implement real-time training visualization.
-- Add prebuilt model templates (CNN, RNN, etc.).
-- Support export/import for trained models.
+- **Drag-and-Drop Model Creation:** Visually build ML models by connecting nodes.
+- **Customizable Components:** Easily incorporate features such as batch normalization, dropout, and various activation functions.
+- **Python-like Functionality:** Enjoy robust numerical computing with libraries that mirror Python’s capabilities.
+- **Training and Evaluation:** Train your models and analyze performance metrics directly within the IDE.
+- **Enhanced Visualizations:** Visualize training progress and model outputs with built-in tools.
 
-## Contributing
-Contributions are welcome! Fork the repository, create a feature branch, and submit a pull request.
+### Installation
 
-## License
-MIT License. See `LICENSE` file for details.
+#### Prerequisites
+
+- Python 3.x (Ensure you have Python 3 installed on your system)
+- Required Python libraries (see [requirements.txt](./requirements.txt) for details)
+
+#### Clone the Repository
+
+Open your terminal and execute:
+
+```bash
+git clone https://github.com/DisDoh/ML_Simulator.git
+cd ML_Simulator
+```
+
+#### Install Dependencies
+
+Install the necessary packages by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+To launch ML_Simulator, simply run:
+
+```bash
+python3 main.py
+```
+
+After starting the application, use the drag-and-drop interface to build and configure your ML models. Train your model and evaluate its performance using the integrated tools.
+
+### Roadmap
+
+- **Real-Time Training Visualization:** Implement live updates during training sessions.
+- **Prebuilt Model Templates:** Introduce templates for popular architectures such as CNNs, RNNs, etc.
+- **Model Export/Import:** Add features for exporting and importing trained models.
+
+### Contributing
+
+Contributions are welcome! To get involved:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request with your enhancements.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
 
