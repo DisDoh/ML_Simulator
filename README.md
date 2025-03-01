@@ -1,36 +1,36 @@
 # ML_Simulator
 
-## Machine Learning IDE
+## Overview
 
-### Overview
+ML_Simulator is a fully customizable Machine Learning IDE that empowers you to design, train, and test neural network models through an intuitive drag-and-drop interface. Built using Python and PyQt5, the IDE provides a visual environment for creating complex models with ease—ideal for both rapid prototyping and in-depth experimentation.
 
-ML_Simulator is a fully customizable Machine Learning IDE that lets you design, train, and test machine learning models using an intuitive drag-and-drop interface. Drawing inspiration from frameworks like PyTorch, this IDE offers a flexible and powerful environment for prototyping and experimentation.
+## Features
 
-### Features
+- **Drag-and-Drop Model Creation:** Build your neural network by visually connecting nodes.
+- **Customizable Components:** Create and modify nodes with customizable settings such as activation functions, biases, and neuron counts.
+- **Interactive Network Visualization:** Watch your network come to life with real-time updates as connections are made and weights are randomized.
+- **Training and Evaluation:** Train your models using built-in backpropagation and feedforward routines, with support for both SGD and Adam optimizers.
+- **Dynamic UI Elements:** Enjoy a polished, interactive UI that lets you add training data via a table interface, adjust node settings, and toggle between different visual representations.
 
-- **Drag-and-Drop Model Creation:** Visually build ML models by connecting nodes.
-- **Customizable Components:** Easily incorporate features such as batch normalization, dropout, and various activation functions.
-- **Python-like Functionality:** Enjoy robust numerical computing with libraries that mirror Python’s capabilities.
-- **Training and Evaluation:** Train your models and analyze performance metrics directly within the IDE.
-- **Enhanced Visualizations:** Visualize training progress and model outputs with built-in tools.
+## Installation
 
-### Installation
+### Prerequisites
 
-#### Prerequisites
+- **Python 3.x:** Ensure you have Python 3 installed on your system.
+- **Required Libraries:**  
+  - [PyQt5](https://pypi.org/project/PyQt5/)
+  - [numpy](https://pypi.org/project/numpy/)
 
-- Python 3.x (Ensure you have Python 3 installed on your system)
-- Required Python libraries (see [requirements.txt](./requirements.txt) for details)
-
-#### Clone the Repository
+### Clone the Repository
 
 Open your terminal and execute:
 
 ```bash
-git clone https://github.com/DisDoh/ML_Simulator.git
+git clone https://github.com/YourUsername/ML_Simulator.git
 cd ML_Simulator
 ```
 
-#### Install Dependencies
+### Install Dependencies
 
 Install the necessary packages by running:
 
@@ -38,7 +38,7 @@ Install the necessary packages by running:
 pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 To launch ML_Simulator, simply run:
 
@@ -46,15 +46,16 @@ To launch ML_Simulator, simply run:
 python3 main.py
 ```
 
-After starting the application, use the drag-and-drop interface to build and configure your ML models. Train your model and evaluate its performance using the integrated tools.
+Once started, use the drag-and-drop interface to add nodes, set up network connections, and train your machine learning models interactively.
 
-### Roadmap
+## Roadmap
 
-- **Real-Time Training Visualization:** Implement live updates during training sessions.
-- **Prebuilt Model Templates:** Introduce templates for popular architectures such as CNNs, RNNs, etc.
-- **Model Export/Import:** Add features for exporting and importing trained models.
+- **Real-Time Training Visualization:** Add live training updates to monitor progress as the model learns.
+- **Prebuilt Model Templates:** Integrate templates for popular architectures such as CNNs, RNNs, etc.
+- **Model Export/Import:** Enable features for saving and loading trained models for future use.
+- **Enhanced UI/UX:** Continuously refine the interface to boost usability and performance.
 
-### Contributing
+## Contributing
 
 Contributions are welcome! To get involved:
 
@@ -62,8 +63,6 @@ Contributions are welcome! To get involved:
 2. Create a feature branch.
 3. Submit a pull request with your enhancements.
 
-### License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-

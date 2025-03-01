@@ -1,64 +1,54 @@
+### 1. Core UI & UX for Model Building (In Progress)
+
+**Implemented:**
+- Drag-and-drop functionality for designing ML models.
+- Node creation with connection circles and toggleable visual formats (rectangular/circular).
+- Basic menu system and context menus for adding inputs, outputs, and hidden layers.
+- Editable node properties such as activation function and bias settings.
+
+**Next Steps:**
+- Refine real-time visual feedback (e.g., dynamic connection highlighting, smoother node interactions).
 
 ---
 
-Milestone-Based TODO List & Progress
-1️⃣ Core UI & UX for Model Building (💡 In Progress)
-✅ Implemented:
+### 2. Model Persistence & Loading (Partially Implemented)
 
-    Drag-and-drop functionality for designing ML models
-    Editable parameters for layers
-    Base architecture using NumpyForGDScript
+**Implemented:**
+- Basic project saving and loading using serialization (pickle).
 
-
-📝 Next Steps:
-🔲 Implement connections between multiple layers
-🔲 Enable real-time feedback on model structure
+**Next Steps:**
+- Improve data structures for model parameters to support scalability.
 
 ---
 
-2️⃣ Model Persistence & Loading (⏳ Planned)
-📝 Goal:
+### 3. Customizable ML Components (Planned)
 
-    Save and load projects with the full model structure
+**Goal:**
+- Expand support for core ML components including normalization, dropout, and additional activation functions.
 
-
-🔲 Implement serialization & deserialization of models
-🔲 Store model parameters in a structured format
-🔲 Enable version control for projects
-
----
-
-3️⃣ Customizable ML Components (⏳ Planned)
-📝 Goal:
-
-    Support all core ML components (normalization, dropout, activations)
-
-
-🔲 Implement batch normalization, dropout layers
-🔲 Extend activation function support (ReLU, Sigmoid, etc.)
-🔲 Allow users to define custom layers
+**Next Steps:**
+- Implement batch normalization and dropout layers.
+- Extend activation function support to include more advanced and custom functions.
+- Allow users to define and integrate custom layers.
 
 ---
 
-4️⃣ Training & Evaluation Pipeline (⏳ Planned)
-📝 Goal:
+### 4. Training & Evaluation Pipeline (Basic Implementation, Enhancement Planned)
 
-    Enable model training & visualization of training metrics
+**Implemented:**
+- Forward and backward propagation routines with support for basic optimizers (SGD and Adam).
+- Console output displaying training loss over epochs.
 
-
-🔲 Implement forward and backward propagation
-🔲 Track loss/accuracy over epochs
-🔲 Visualize model performance in real-time
-
----
-
-5️⃣ Exporting & Compatibility (⏳ Planned)
-📝 Goal:
-
-    Export models in a format compatible with external tools
-
-
-🔲 Support ONNX or TensorFlow model conversion
-🔲 Allow running trained models inside Godot
+**Next Steps:**
+- Integrate real-time visualization of training metrics within the UI.
+- Develop interactive performance graphs and advanced evaluation metrics.
 
 ---
+
+### 5. Exporting & Compatibility (Planned)
+
+**Goal:**
+- Export models in formats compatible with external tools (e.g., ONNX, TensorFlow) and enable integration with Godot.
+
+**Next Steps:**
+- Develop model conversion utilities for standard formats.
