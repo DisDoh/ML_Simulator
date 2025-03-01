@@ -1,0 +1,64 @@
+
+---
+
+Milestone-Based TODO List & Progress
+1️⃣ Core UI & UX for Model Building (💡 In Progress)
+✅ Implemented:
+
+    Drag-and-drop functionality for designing ML models
+    Editable parameters for layers
+    Base architecture using NumpyForGDScript
+
+
+📝 Next Steps:
+🔲 Implement connections between multiple layers
+🔲 Enable real-time feedback on model structure
+
+---
+
+2️⃣ Model Persistence & Loading (⏳ Planned)
+📝 Goal:
+
+    Save and load projects with the full model structure
+
+
+🔲 Implement serialization & deserialization of models
+🔲 Store model parameters in a structured format
+🔲 Enable version control for projects
+
+---
+
+3️⃣ Customizable ML Components (⏳ Planned)
+📝 Goal:
+
+    Support all core ML components (normalization, dropout, activations)
+
+
+🔲 Implement batch normalization, dropout layers
+🔲 Extend activation function support (ReLU, Sigmoid, etc.)
+🔲 Allow users to define custom layers
+
+---
+
+4️⃣ Training & Evaluation Pipeline (⏳ Planned)
+📝 Goal:
+
+    Enable model training & visualization of training metrics
+
+
+🔲 Implement forward and backward propagation
+🔲 Track loss/accuracy over epochs
+🔲 Visualize model performance in real-time
+
+---
+
+5️⃣ Exporting & Compatibility (⏳ Planned)
+📝 Goal:
+
+    Export models in a format compatible with external tools
+
+
+🔲 Support ONNX or TensorFlow model conversion
+🔲 Allow running trained models inside Godot
+
+---
